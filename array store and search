@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+int [] arycount = new int [10];
+int numcount = 0;
+while (numcount<arycount.length){
+  int numinp;
+  System.out.print("Enter number "+numcount+": ");
+  numinp = input.nextInt();
+  arycount[numcount] = numinp;
+  numcount++;
+}
+int numsearch;
+System.out.print("Search for numbers of a number: ");
+numsearch = input.nextInt();
+int tally = 0;
+for (int a=0;a<arycount.length;a++){
+if (arycount[a] == numsearch) 
+tally++;
+}
+System.out.print("# of numbers: "+tally);
+
+}
+}
