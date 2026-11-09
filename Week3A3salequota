@@ -30,6 +30,6 @@ for (int r = 0; r < sales.length; r++) {
 	totalsales, metQuota ? "YES":"NO",comission, salary);	
 }
 System.out.println("Quota acheivers: "+quotacount);
-System.out.printf("Toal payroll: %.0f%n", totalpayroll);
+System.out.printf("Total payroll: %.0f%n", totalpayroll);
 }
 }
