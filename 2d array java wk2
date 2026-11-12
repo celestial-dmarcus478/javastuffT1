@@ -1,0 +1,56 @@
+import java.util.*;
+ 
+
+public class Main {
+    public static void main(String[] args) {
+int [][] myarray = {
+    {1,2,3},
+    {4,5,6},
+    {7,8,9},
+};
+System.out.println("Original array:");
+for (int row = 0; row <myarray.length;row++) {
+  for(int col = 0; col<myarray[row].length;col++) {
+    System.out.print(myarray[row][col]+" ");
+  }
+  System.out.println();
+  }
+//Sums:row
+System.out.println("Row sums:");
+for (int rctr = 0; rctr <myarray.length;rctr++) {
+  int rowsum = 0;
+ for(int sctr = 0; sctr<myarray[rctr].length;sctr++) {
+    rowsum += myarray[rctr][sctr];
+}
+System.out.print(rowsum+",");
+}
+//Sums:coulumn
+System.out.println("\nCoulumn sums:");
+for (int rctr = 0; rctr <myarray.length;rctr++) {
+  int colsum = 0;
+ for(int sctr = 0; sctr<myarray[rctr].length;sctr++) {
+    colsum += myarray[sctr][rctr];
+}
+System.out.print(colsum+",");
+}
+//Maindiagonal
+System.out.println("\nMaindiagonal sum:");
+int rctr = 0;
+int sctr = 0;
+int diasum = 0;
+while(rctr<myarray.length){
+diasum += myarray[rctr][sctr];
+    sctr++;
+rctr++;
+}
+System.out.print(diasum);
+//Transponse
+System.out.print("\nTranspose:\n");
+for (int row = 0; row <myarray.length;row++) {
+  for(int col = 0; col<myarray[row].length;col++) {
+    System.out.print(myarray[col][row]+" ");
+  }
+  System.out.println();
+ }
+}
+}
